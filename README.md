@@ -1,7 +1,5 @@
 # Portfolio (React + Tailwind CSS)
 
-A frontend-only developer portfolio. There is no backend or database: your projects live in a data file, and the whole site is static, so it can be hosted for free.
-
 Built with React 19, Vite, React Router, and Tailwind CSS v4. Dark and light themes.
 
 ## Run it
