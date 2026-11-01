@@ -33,8 +33,8 @@ const items = [
       'It has dark and light themes, a filterable project list, project detail pages, and a CV-style About page.',
     ].join('\n\n'),
     tags: ['React', 'Tailwind CSS', 'Vite'],
-    githubUrl: '', // add your repository link
-    liveUrl: '',
+    githubUrl: 'https://github.com/Anil-kumar9861/Portfolio-Project', // add your repository link
+    liveUrl: 'https://portfolio-project-nine-topaz.vercel.app/',
     imageUrl: '/projects/Portfoilo.png',
     featured: true,
     createdAt: '2026-10-28',

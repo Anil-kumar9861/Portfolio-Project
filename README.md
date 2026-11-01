@@ -13,7 +13,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173.
+Open https://portfolio-project-nine-topaz.vercel.app/.
 
 ## Build for production
 
