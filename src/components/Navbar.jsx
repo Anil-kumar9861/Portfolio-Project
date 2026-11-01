@@ -26,7 +26,7 @@ export default function Navbar() {
         {/* Mobile theme button */}
         <button
           type="button"
-          className="order-2 min-h-10 rounded-lg border border-line-strong px-3 text-sm font-medium text-ink transition hover:border-accent md:hidden"
+          className="order-2 min-h-10 w-28 shrink-0 whitespace-nowrap rounded-lg border border-line-strong px-2 text-xs font-medium text-ink transition hover:border-accent md:hidden"
           onClick={toggle}
           aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
         >
