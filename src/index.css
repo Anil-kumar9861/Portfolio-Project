@@ -1,0 +1,76 @@
+@import 'tailwindcss';
+
+/* ---------- Theme values (dark is the default) ---------- */
+:root,
+:root[data-theme='dark'] {
+  --bg: #233d4d;
+  --panel: #1b303d;
+  --panel-2: #213747;
+  --border: #3a5668;
+  --border-strong: #4a6678;
+  --text: #f4efe6;
+  --heading: #d6eaf2;
+  --muted: #b8c6d0;
+  --accent: #fe7f2d;
+  --accent-text: #fe7f2d;
+  --on-accent: #162833;
+  --dot: #2d4a5b;
+  --shadow: rgba(0, 0, 0, 0.4);
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #C7D1DD;
+  --panel: #E5E5E5;
+  --panel-2: #9CA3AF;
+  --border: #ccd6dc;
+  --border-strong: #162833;
+  --text: #233d4d;
+  --heading: #233d4d;
+  --muted: #4a5d6a;
+  --accent: #1333d3;
+  --accent-text: #3236C0;
+  --on-accent: #c4c8c8;
+  --dot: #DCDE32;
+  --shadow: rgba(35, 61, 77, 0.25);
+  color-scheme: light;
+}
+
+/* ---------- Tailwind tokens: gives classes like bg-page, text-muted, border-line ---------- */
+@theme inline {
+  --color-page: var(--bg);
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-ink: var(--text);
+  --color-heading: var(--heading);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-text);
+  --color-on-accent: var(--on-accent);
+  --color-dot: var(--dot);
+
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-heading: 'Chakra Petch', 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --shadow-window: 0 12px 32px var(--shadow);
+}
+
+@layer base {
+  body {
+    @apply flex min-h-screen flex-col bg-page font-sans text-[17px] leading-relaxed text-ink;
+  }
+  #root {
+    @apply flex flex-1 flex-col;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-heading font-medium leading-[1.1] text-heading;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-4 outline-accent;
+  }
+}
