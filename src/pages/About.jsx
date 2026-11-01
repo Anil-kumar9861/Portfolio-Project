@@ -110,7 +110,7 @@ export default function About() {
             {photoFailed ? (
               <div
                 aria-hidden="true"
-                className="absolute inset-0 grid place-items-center font-heading text-7xl font-bold text-line-strong"
+                className="absolute inset-0 grid place-items-center font-heading text-8xl font-bold text-line-strong"
               >
                 {initials}
               </div>
