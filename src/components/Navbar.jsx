@@ -35,7 +35,7 @@ export default function Navbar() {
 
         <nav
           aria-label="Main"
-         className="order-3 flex w-full flex-wrap items-center justify-start gap-x-5 gap-y-3 text-sm sm:gap-x-7 sm:text-base md:order-2 md:w-auto"
+        className="order-3 flex w-full flex-wrap items-center justify-end gap-x-5 gap-y-3 text-sm sm:gap-x-7 sm:text-base md:order-2 md:w-auto"
         >
           <NavLink to="/projects" className={linkClass}>Projects</NavLink>
           <NavLink to="/about" className={linkClass}>About</NavLink>
